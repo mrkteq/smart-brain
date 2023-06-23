@@ -4,12 +4,12 @@ import Navigation from "./components/navigation/Navigation";
 import Logo from "./components/logo/Logo";
 import ImageLinkForm from "./components/ImageLinkForm/ImageLinkForm";
 import Rank from "./components/Rank/Rank";
-import Particles from "./components/Particles/Particles";
+// import Particles from "./components/Particles/Particles";
 import FaceRecognition from "./components/FaceRecognition/FaceRecognition";
 import SignIn from "./components/SignIn/SignIn";
 import Register from "./components/Register/Register";
 
-const MODEL_ID = 'face-detection';
+// const MODEL_ID = 'face-detection';
 
 const returnClarifaiRequestOptions = (imageUrl) => {
   const PAT = '937498086fd14a32ac09b45515dc90a2';
@@ -53,6 +53,12 @@ class App extends Component {
       route: "signin",
       isSignedIn: false
     };
+  }
+
+  componentDidMount() {
+    fetch("http://localhost:3000/")
+      .then(response => response.json())
+      .then(console.log);
   }
 
   calculateFaceLocation = (data) => {
@@ -99,7 +105,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Particles id="tsparticles" />
+        {/* <Particles id="tsparticles" /> */}
         <Navigation isSignedIn={this.state.isSignedIn} onRouteChange={this.onRouteChange} />
         { this.state.route === 'home' 
           ? <div>
