@@ -1,2 +1,2 @@
-# facerecognitionbrain
-Upload an image and have Clarifai api detect faces
+# smart-brain
+Upload an image and the Clarifai api will detect faces
