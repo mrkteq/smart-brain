@@ -33,7 +33,7 @@ class Register extends React.Component {
             })
         }).then(response => response.json())
         .then(user => {
-            if (user) {
+            if (user.id) {
                 this.props.loadUser(user); // this.props.loadUser(user) is a function that takes the user object as an argument and sets the state of the user object to the user object that was passed in as an argument.
                 this.props.onRouteChange("home");
             }

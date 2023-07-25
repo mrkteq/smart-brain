@@ -13,6 +13,8 @@ import Register from "./components/Register/Register";
 
 const returnClarifaiRequestOptions = (imageUrl) => {
   const PAT = '937498086fd14a32ac09b45515dc90a2';
+
+
   const USER_ID = 'mrkteq';       
   const APP_ID = 'test';
   const IMAGE_URL = imageUrl;
