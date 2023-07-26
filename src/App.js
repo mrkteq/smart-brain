@@ -77,7 +77,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:3000/")
+    fetch("https://smart-brain-api-ua86.onrender.com/")
       .then(response => response.json())
   }
 
@@ -118,7 +118,7 @@ class App extends Component {
       )
       .then(result => {
         if (result) {
-          fetch("http://localhost:3000/image", {
+          fetch("https://smart-brain-api-ua86.onrender.com:3000/image", {
             method: "put",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({
