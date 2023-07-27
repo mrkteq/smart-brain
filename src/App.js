@@ -77,7 +77,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("https://smart-brain-api-ua86.onrender.com:3000/")
+    fetch("https://smart-brain-api-ua86.onrender.com/")
       .then(response => response.json())
   }
 
