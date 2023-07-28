@@ -77,7 +77,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("https://smart-brain-api-ua86.onrender.com/")
+    fetch("https://smart-brain-api-ua86.onrender.com:3000/")
       .then(response => response.json())
       // unexpected end of JSON input
       .then(console.log)
