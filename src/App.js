@@ -79,6 +79,9 @@ class App extends Component {
   componentDidMount() {
     fetch("https://smart-brain-api-ua86.onrender.com/")
       .then(response => response.json())
+      // unexpected end of JSON input
+      .then(console.log)
+      .catch(console.log)
   }
 
   calculateFaceLocation = (data) => {
