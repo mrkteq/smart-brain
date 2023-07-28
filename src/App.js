@@ -77,7 +77,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("https://smart-brain-api-ua86.onrender.com:3000/")
+    fetch("https://smart-brain-api-ua86.onrender.com/")
       .then(response => response.json())
       // unexpected end of JSON input
       .then(console.log)
@@ -121,7 +121,7 @@ class App extends Component {
       )
       .then(result => {
         if (result) {
-          fetch("https://smart-brain-api-ua86.onrender.com:3000/image", {
+          fetch("https://smart-brain-api-ua86.onrender.com/image", {
             method: "put",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({
